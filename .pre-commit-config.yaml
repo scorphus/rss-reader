@@ -1,0 +1,61 @@
+# This file is part of walt
+# https://github.com/scorphus/walt
+
+# Licensed under the BSD-3-Clause license:
+# https://opensource.org/licenses/BSD-3-Clause
+# Copyright (c) 2021, Pablo S. Blum de Aguiar <scorphus@gmail.com>
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-vcs-permalinks
+      - id: check-yaml
+        args: ['--unsafe']
+      - id: end-of-file-fixer
+        types: [non-executable, file, text]
+        exclude_types: [markdown]
+      - id: mixed-line-ending
+      - id: trailing-whitespace
+        types: [non-executable, file, text]
+        exclude_types: [markdown]
+  - repo: meta
+    hooks:
+      - id: check-useless-excludes
+  - repo: https://github.com/psf/black
+    rev: 23.11.0
+    hooks:
+    - id: black
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        args: ['--profile', 'black']
+  - repo: https://github.com/PyCQA/flake8
+    rev: 6.1.0
+    hooks:
+      - id: flake8
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        language: system
+        entry: pylint
+        types: [python]
+        require_serial: true
+      - id: mypy
+        name: mypy
+        language: system
+        entry: black
+        types: [python]
+        require_serial: true
+      - id: test
+        name: test
+        language: system
+        entry: make test
+        types: [python]
+        pass_filenames: false
