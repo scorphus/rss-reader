@@ -55,3 +55,20 @@ def read_user(*, session: db.Session = Depends(get_session), username: str) -> d
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
     return user
+
+
+@app.patch("/users/{username}")
+def update_user(
+    *,
+    session: db.Session = Depends(get_session),
+    username: str,
+    user: db.UserBase,
+) -> db.User:
+    """Update a user"""
+    try:
+        updated_user = db.update_user(session, username=username, user=user)
+    except ValueError as err:
+        raise HTTPException(status_code=409, detail=str(err)) from err
+    if not updated_user:
+        raise HTTPException(status_code=404, detail="User not found")
+    return updated_user

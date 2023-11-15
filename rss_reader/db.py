@@ -87,3 +87,20 @@ def get_users(session: Session, offset: int = 0, limit: int = 10) -> List[User]:
 def get_user(session: Session, username: str) -> Optional[User]:
     """Get a user from the database"""
     return session.exec(select(User).where(User.username == username)).first()
+
+
+def update_user(session: Session, username: str, user: UserBase) -> Optional[User]:
+    """Update a user in the database"""
+    existing_user = get_user(session, username)
+    if not existing_user:
+        return None
+    for field, value in user.dict(exclude_unset=True).items():
+        setattr(existing_user, field, value)
+    try:
+        session.add(existing_user)
+        session.commit()
+        session.refresh(existing_user)
+        return existing_user
+    except sqlalchemy.exc.IntegrityError as err:
+        session.rollback()
+        raise ValueError("User already exists") from err

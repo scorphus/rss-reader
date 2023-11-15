@@ -145,3 +145,45 @@ def test_read_user_not_found_no_route(client: TestClient):
     response = client.get("/users/dan/wannabe")
     assert response.status_code == 404
     assert response.json() == {"detail": "Not Found"}
+
+
+def test_update_user(session: Session, client: TestClient):
+    response = client.post("/users/", json={"username": "dave"})
+    data = response.json()
+    user_id = data["id"]
+    response = client.patch("/users/dave", json={"username": "david"})
+    data = response.json()
+    assert response.status_code == 200
+    assert data["id"] == user_id
+    assert data["username"] == "david"
+    response = client.get("/users/david")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["username"] == "david"
+    assert data["id"] == user_id
+    response = client.get("/users/dave")
+    assert response.status_code == 404
+    assert response.json() == {"detail": "User not found"}
+
+
+def test_update_user_not_found(client: TestClient):
+    response = client.patch("/users/notdave", json={"username": "david"})
+    assert response.status_code == 404
+    assert response.json() == {"detail": "User not found"}
+
+
+def test_update_user_existing(client: TestClient):
+    client.post("/users/", json={"username": "jack"})
+    client.post("/users/", json={"username": "daniels"})
+    response = client.patch("/users/daniels", json={"username": "jack"})
+    assert response.status_code == 409
+    response = client.get("/users/daniels")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["username"] == "daniels"
+
+
+def test_update_user_invalid(client: TestClient):
+    client.post("/users/", json={"username": "john"})
+    response = client.patch("/users/john", json={"username": "john daniels"})
+    assert response.status_code == 422
