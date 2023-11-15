@@ -104,3 +104,13 @@ def update_user(session: Session, username: str, user: UserBase) -> Optional[Use
     except sqlalchemy.exc.IntegrityError as err:
         session.rollback()
         raise ValueError("User already exists") from err
+
+
+def delete_user(session: Session, username: str) -> Optional[User]:
+    """Delete a user from the database"""
+    existing_user = get_user(session, username)
+    if not existing_user:
+        return None
+    session.delete(existing_user)
+    session.commit()
+    return existing_user

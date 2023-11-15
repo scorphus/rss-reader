@@ -187,3 +187,31 @@ def test_update_user_invalid(client: TestClient):
     client.post("/users/", json={"username": "john"})
     response = client.patch("/users/john", json={"username": "john daniels"})
     assert response.status_code == 422
+
+
+def test_delete_user(client: TestClient):
+    response = client.post("/users/", json={"username": "bruce"})
+    data = response.json()
+    user_id = data["id"]
+    response = client.get("/users/bruce")
+    assert response.status_code == 200
+    response = client.delete("/users/bruce")
+    assert response.status_code == 204
+    response = client.get("/users/bruce")
+    assert response.status_code == 404
+    assert response.json() == {"detail": "User not found"}
+    response = client.get("/users/")
+    data = response.json()
+    assert user_id not in [user["id"] for user in data]
+
+
+def test_delete_user_not_found(client: TestClient):
+    response = client.delete("/users/notbruce")
+    assert response.status_code == 404
+    assert response.json() == {"detail": "User not found"}
+
+
+def test_delete_user_no_username_not_allowed(client: TestClient):
+    response = client.delete("/users/")
+    assert response.status_code == 405
+    assert response.json() == {"detail": "Method Not Allowed"}

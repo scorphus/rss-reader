@@ -72,3 +72,11 @@ def update_user(
     if not updated_user:
         raise HTTPException(status_code=404, detail="User not found")
     return updated_user
+
+
+@app.delete("/users/{username}", status_code=204)
+def delete_user(*, session: db.Session = Depends(get_session), username: str) -> None:
+    """Delete a user"""
+    user = db.delete_user(session, username=username)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
