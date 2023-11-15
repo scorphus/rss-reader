@@ -82,3 +82,8 @@ def add_user(session: Session, user: User) -> User:
 def get_users(session: Session, offset: int = 0, limit: int = 10) -> List[User]:
     """Get all users from the database"""
     return session.exec(select(User).offset(offset).limit(limit)).all()
+
+
+def get_user(session: Session, username: str) -> Optional[User]:
+    """Get a user from the database"""
+    return session.exec(select(User).where(User.username == username)).first()

@@ -125,3 +125,23 @@ def test_read_users_empty_db(reset_db: db.Engine, client: TestClient):
     assert response.status_code == 200
     data = response.json()
     assert len(data) == 0
+
+
+def test_read_user(client: TestClient):
+    client.post("/users/", json={"username": "dan"})
+    response = client.get("/users/dan")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["username"] == "dan"
+
+
+def test_read_user_not_found(client: TestClient):
+    response = client.get("/users/notdan")
+    assert response.status_code == 404
+    assert response.json() == {"detail": "User not found"}
+
+
+def test_read_user_not_found_no_route(client: TestClient):
+    response = client.get("/users/dan/wannabe")
+    assert response.status_code == 404
+    assert response.json() == {"detail": "Not Found"}

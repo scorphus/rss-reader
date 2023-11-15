@@ -46,3 +46,12 @@ def read_users(
 ) -> List[db.User]:
     """Return a list of users"""
     return db.get_users(session, offset=offset, limit=limit)
+
+
+@app.get("/users/{username}")
+def read_user(*, session: db.Session = Depends(get_session), username: str) -> db.User:
+    """Return a user"""
+    user = db.get_user(session, username=username)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    return user
