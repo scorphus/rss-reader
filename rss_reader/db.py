@@ -12,6 +12,8 @@
 
 import functools
 import os
+import urllib
+from datetime import datetime
 from typing import List, Optional
 
 import sqlalchemy
@@ -48,6 +50,34 @@ class User(UserBase, table=True):
     """User defines the full model for a user"""
 
     id: Optional[int] = Field(default=None, primary_key=True)
+
+
+class FeedBase(SQLModel):
+    """Feed defines the base model for a feed"""
+
+    url: str = Field(sa_column_kwargs={"unique": True})
+
+    @validator("url")
+    def valid_url(cls, value: str) -> str:  # pylint: disable=no-self-argument
+        """Validate url"""
+        assert urllib.parse.urlparse(value).scheme in {"http", "https"}, "must be a valid URL"
+        return value
+
+    def __repr__(self) -> str:
+        return f"Feed(url={self.url})"
+
+
+class Feed(FeedBase, table=True):
+    """Feed defines the full model for a feed"""
+
+    id: Optional[int] = Field(default=None, primary_key=True)
+    title: Optional[str]
+    subtitle: Optional[str]
+    updated: Optional[datetime]
+    # posts: List["Post"] = Relationship(back_populates="feed")
+    # subscribers: List["User"] = Relationship(
+    #     back_populates="subscriptions", link_model=FeedUserSub
+    # )
 
 
 @functools.cache
@@ -114,3 +144,20 @@ def delete_user(session: Session, username: str) -> Optional[User]:
     session.delete(existing_user)
     session.commit()
     return existing_user
+
+
+def add_feed(session: Session, feed: Feed) -> Feed:
+    """Add a feed to the database"""
+    try:
+        session.add(feed)
+        session.commit()
+        session.refresh(feed)
+        return feed
+    except sqlalchemy.exc.IntegrityError as err:
+        session.rollback()
+        raise ValueError("Feed already exists") from err
+
+
+def get_feeds(session: Session, offset: int = 0, limit: int = 10) -> List[Feed]:
+    """Get all feeds from the database"""
+    return session.exec(select(Feed).offset(offset).limit(limit)).all()

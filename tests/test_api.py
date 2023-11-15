@@ -215,3 +215,43 @@ def test_delete_user_no_username_not_allowed(client: TestClient):
     response = client.delete("/users/")
     assert response.status_code == 405
     assert response.json() == {"detail": "Method Not Allowed"}
+
+
+def test_create_feed(client: TestClient):
+    response = client.post("/feeds/", json={"url": "http://feed1.com"})
+    assert response.status_code == 201
+    data = response.json()
+    assert data["url"] == "http://feed1.com"
+    assert not data["title"]
+    assert not data["subtitle"]
+    assert not data["updated"]
+
+
+def test_create_feed_invalid(client: TestClient):
+    response = client.post("/feeds/", json={"url": "feed1.com"})
+    assert response.status_code == 422
+
+
+def test_create_feed_dupe(client: TestClient):
+    response = client.post("/feeds/", json={"url": "http://feed2.com"})
+    assert response.status_code == 201
+    response = client.post("/feeds/", json={"url": "http://feed2.com"})
+    assert response.status_code == 409
+
+
+def test_read_feeds(reset_db: db.Engine, client: TestClient):
+    client.post("/feeds/", json={"url": "http://feed3.com"})
+    client.post("/feeds/", json={"url": "http://feed4.com"})
+    response = client.get("/feeds/")
+    assert response.status_code == 200
+    data = response.json()
+    assert len(data) == 2
+    assert data[0]["url"] == "http://feed3.com"
+    assert data[1]["url"] == "http://feed4.com"
+
+
+def test_read_feeds_empty_db(reset_db: db.Engine, client: TestClient):
+    response = client.get("/feeds/")
+    assert response.status_code == 200
+    data = response.json()
+    assert len(data) == 0

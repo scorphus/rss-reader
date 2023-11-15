@@ -80,3 +80,24 @@ def delete_user(*, session: db.Session = Depends(get_session), username: str) ->
     user = db.delete_user(session, username=username)
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
+
+
+@app.post("/feeds/", status_code=201)
+def create_feed(*, session: db.Session = Depends(get_session), feed: db.FeedBase) -> db.Feed:
+    """Create a new feed"""
+    new_feed = db.Feed.from_orm(feed)
+    try:
+        return db.add_feed(session, new_feed)
+    except ValueError as err:
+        raise HTTPException(status_code=409, detail=str(err)) from err
+
+
+@app.get("/feeds/")
+def read_feeds(
+    *,
+    session: db.Session = Depends(get_session),
+    offset: int = 0,
+    limit: int = Query(default=100, le=100),
+) -> List[db.Feed]:
+    """Return a list of feeds"""
+    return db.get_feeds(session, offset=offset, limit=limit)
