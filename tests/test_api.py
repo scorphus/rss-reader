@@ -255,3 +255,25 @@ def test_read_feeds_empty_db(reset_db: db.Engine, client: TestClient):
     assert response.status_code == 200
     data = response.json()
     assert len(data) == 0
+
+
+def test_read_feed(client: TestClient):
+    response = client.post("/feeds/", json={"url": "http://feed5.com"})
+    data = response.json()
+    feed_id = data["id"]
+    response = client.get(f"/feeds/{feed_id}")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["url"] == "http://feed5.com"
+
+
+def test_read_feed_not_found(client: TestClient):
+    response = client.get("/feeds/123")
+    assert response.status_code == 404
+    assert response.json() == {"detail": "Feed not found"}
+
+
+def test_read_feed_not_found_no_route(client: TestClient):
+    response = client.get("/feeds/123/wannabe")
+    assert response.status_code == 404
+    assert response.json() == {"detail": "Not Found"}

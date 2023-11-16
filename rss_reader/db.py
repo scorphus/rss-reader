@@ -161,3 +161,8 @@ def add_feed(session: Session, feed: Feed) -> Feed:
 def get_feeds(session: Session, offset: int = 0, limit: int = 10) -> List[Feed]:
     """Get all feeds from the database"""
     return session.exec(select(Feed).offset(offset).limit(limit)).all()
+
+
+def get_feed(session: Session, feed_id: int) -> Optional[Feed]:
+    """Get a feed from the database"""
+    return session.exec(select(Feed).where(Feed.id == feed_id)).first()

@@ -101,3 +101,12 @@ def read_feeds(
 ) -> List[db.Feed]:
     """Return a list of feeds"""
     return db.get_feeds(session, offset=offset, limit=limit)
+
+
+@app.get("/feeds/{feed_id}")
+def read_feed(*, session: db.Session = Depends(get_session), feed_id: int) -> db.Feed:
+    """Return a feed"""
+    feed = db.get_feed(session, feed_id=feed_id)
+    if not feed:
+        raise HTTPException(status_code=404, detail="Feed not found")
+    return feed
