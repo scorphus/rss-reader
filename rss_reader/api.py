@@ -110,3 +110,11 @@ def read_feed(*, session: db.Session = Depends(get_session), feed_id: int) -> db
     if not feed:
         raise HTTPException(status_code=404, detail="Feed not found")
     return feed
+
+
+@app.delete("/feeds/{feed_id}", status_code=204)
+def delete_feed(*, session: db.Session = Depends(get_session), feed_id: int) -> None:
+    """Delete a feed"""
+    feed = db.delete_feed(session, feed_id=feed_id)
+    if not feed:
+        raise HTTPException(status_code=404, detail="Feed not found")

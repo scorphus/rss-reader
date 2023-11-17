@@ -166,3 +166,13 @@ def get_feeds(session: Session, offset: int = 0, limit: int = 10) -> List[Feed]:
 def get_feed(session: Session, feed_id: int) -> Optional[Feed]:
     """Get a feed from the database"""
     return session.exec(select(Feed).where(Feed.id == feed_id)).first()
+
+
+def delete_feed(session: Session, feed_id: int) -> Optional[Feed]:
+    """Delete a feed from the database"""
+    existing_feed = get_feed(session, feed_id)
+    if not existing_feed:
+        return None
+    session.delete(existing_feed)
+    session.commit()
+    return existing_feed

@@ -277,3 +277,31 @@ def test_read_feed_not_found_no_route(client: TestClient):
     response = client.get("/feeds/123/wannabe")
     assert response.status_code == 404
     assert response.json() == {"detail": "Not Found"}
+
+
+def test_delete_feed(client: TestClient):
+    response = client.post("/feeds/", json={"url": "http://feed6.com"})
+    data = response.json()
+    feed_id = data["id"]
+    response = client.get(f"/feeds/{feed_id}")
+    assert response.status_code == 200
+    response = client.delete(f"/feeds/{feed_id}")
+    assert response.status_code == 204
+    response = client.get(f"/feeds/{feed_id}")
+    assert response.status_code == 404
+    assert response.json() == {"detail": "Feed not found"}
+    response = client.get("/feeds/")
+    data = response.json()
+    assert feed_id not in [feed["id"] for feed in data]
+
+
+def test_delete_feed_not_found(client: TestClient):
+    response = client.delete("/feeds/123")
+    assert response.status_code == 404
+    assert response.json() == {"detail": "Feed not found"}
+
+
+def test_delete_feed_no_feed_id_not_allowed(client: TestClient):
+    response = client.delete("/feeds/")
+    assert response.status_code == 405
+    assert response.json() == {"detail": "Method Not Allowed"}
