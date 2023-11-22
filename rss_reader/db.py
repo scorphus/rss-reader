@@ -31,10 +31,43 @@ DATABASE_URL = os.getenv(
 )
 
 
+# class FeedUserSub(SQLModel, table=True):
+#     """FeedUserSub defines the model of a feed subscription by a user"""
+
+#     feed_id: Optional[int] = Field(default=None, foreign_key="feed.id", primary_key=True)
+#     user_id: Optional[int] = Field(default=None, foreign_key="user.id", primary_key=True)
+
+
+# class PostUserRead(SQLModel, table=True):
+#     """PostUserRead defines the model of a post read by a user"""
+
+#     post_id: Optional[int] = Field(default=None, foreign_key="post.id", primary_key=True)
+#     user_id: Optional[int] = Field(default=None, foreign_key="user.id", primary_key=True)
+
+
+# class Post(SQLModel, table=True):
+#     """Post defines the model for a post"""
+
+#     id: Optional[int] = Field(default=None, primary_key=True)
+#     post_id: str = Field(sa_column_kwargs={"unique": True})
+#     title: str
+#     link: str
+#     summary: str
+#     published: datetime
+#     feed_id: int = Field(foreign_key="feed.id")
+#     feed: Feed = Relationship(back_populates="posts")
+#     readers: List["User"] = Relationship(back_populates="read_posts", link_model=PostUserRead)
+
+#     def __repr__(self) -> str:
+#         return f"Post(post_id={self.post_id})"
+
+
 class UserBase(SQLModel):
     """User defines the base model for a user"""
 
     username: str = Field(sa_column_kwargs={"unique": True}, index=True, min_length=2)
+    # subscriptions: List[Feed] = Relationship(back_populates="subscribers", link_model=FeedUserSub)
+    # read_posts: List[Post] = Relationship(back_populates="readers", link_model=PostUserRead)
 
     @validator("username")
     def valid_username(cls, value: str) -> str:  # pylint: disable=no-self-argument

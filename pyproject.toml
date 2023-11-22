@@ -19,5 +19,5 @@ exclude = '''
 line-length = 99
 
 [[tool.mypy.overrides]]
-module = ["logtail"]
+module = ["logtail", "feedparser"]
 ignore_missing_imports = true

@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <category term="programming" label="r/programming" />
+    <updated>2023-11-16T13:54:19+00:00</updated>
+    <icon>https://www.redditstatic.com/icon.png/</icon>
+    <id>/r/programming/.rss</id>
+    <link rel="self" href="https://www.reddit.com/r/programming/.rss" type="application/atom+xml" />
+    <link rel="alternate" href="https://www.reddit.com/r/programming/" type="text/html" />
+    <logo>https://b.thumbs.redditmedia.com/2rTE46grzsr-Ll3Q.png</logo>
+    <subtitle>Computer Programming</subtitle>
+    <title>programming</title>
+    <entry>
+        <author>
+            <name>/u/ketralnis</name>
+            <uri>https://www.reddit.com/user/ketralnis</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;h1&gt;Hello
+            fellow programs!&lt;/h1&gt; &lt;p&gt;&lt;strong&gt;tl;dr what should &lt;a
+            href=&quot;/r/programming&quot;&gt;r/programming&lt;/a&gt;&amp;#39;s rules
+            be?&lt;/strong&gt; And also a call for additional mods. We&amp;#39;ll leave this
+            stickied for a few days to gather feedback.&lt;/p&gt; &lt;p&gt;Here are the broad
+            categories of content that we see, along with whether they are
+            &lt;strong&gt;currently&lt;/strong&gt; allowed. ✅ means that it&amp;#39;s currently
+            allowed, 🚫 means that it&amp;#39;s not currently allowed, ⚠️ means that we leave it up
+            if it is already popular but if we catch it young in its life we do try to remove it
+            early.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;✅ Actual programming content. They probably have
+            actual code in them. Language or library writeups, papers, technology descriptions. How
+            an allocator works. How my new fancy allocator I just wrote works. How our startup built
+            our Frobnicator, rocket ship emoji. For many years this was the only category of allowed
+            content.&lt;/li&gt; &lt;li&gt;✅ Programming news. ChatGPT can write code. A big new CVE
+            just dropped. Curl 8.01 released now with Coffee over IP support.&lt;/li&gt; &lt;li&gt;✅
+            Programmer career content. How to become a Staff engineer in 30 days. Habits of the best
+            engineering managers. How to deal with your annoying coworkers,
+            &lt;em&gt;Jeff&lt;/em&gt;.&lt;/li&gt; &lt;li&gt;✅ Articles/news interesting
+            &lt;em&gt;to&lt;/em&gt; programmers but not about programming. Work from home is
+            bullshit. Return to office is bullshit. There&amp;#39;s a Steam sale on programming
+            games. Terry Davis has died. How to SCRUMM. App Store commissions are going up. How to
+            hire a more diverse development team. Interviewing programmers is broken.&lt;/li&gt;
+            &lt;li&gt;⚠️ General technology news. Google buys its last competitor. A self driving
+            car hit a pedestrian. Twitter is collapsing. Oculus accidentally showed your grandmother
+            a penis. Github sued when Copilot produces the complete works of Harry Potter in a code
+            comment. Meta cancels work from home. Gnome dropped a feature I like. How to run Stable
+            Diffusion to generate pictures of, uh, cats, yeah it&amp;#39;s definitely just for cats.
+            A bitcoin VR metaversed my AI and now my app store is mobile social local.&lt;/li&gt;
+            &lt;li&gt;🚫 Politics. The Pirate Party is winning in Sweden. Please vote for net
+            neutrality. Big Tech is being sued in Europe for &lt;em&gt;gestures
+            broadly&lt;/em&gt;.&lt;/li&gt; &lt;li&gt;🚫 Gossip. Richard Stallman switches to
+            Windows. Elon Musk farted. Linus Torvalds was a poopy-head on a mailing list. Grace
+            Hopper Conference is now 60% male. The People&amp;#39;s Rust Foundation is arguing with
+            the Rust Foundation For The People. Terraform has been forked into Terra and Form. Stack
+            Overflow sucks now. Stack Overflow is good actually.&lt;/li&gt; &lt;li&gt;✅ Demos with
+            code. I wrote a game, here it is on GitHub&lt;/li&gt; &lt;li&gt;🚫 Demos without code. I
+            wrote a game, come buy it! Please give me feedback on my startup (totally not an ad
+            nosirree). I stayed up all night writing a commercial text editor, here&amp;#39;s the
+            pricing page. I made a DALL-E image generator. I made the fifteenth animation of A* this
+            week, here&amp;#39;s a GIF.&lt;/li&gt; &lt;li&gt;🚫 AskReddit type forum questions.
+            What&amp;#39;s your favourite programming language? Tabs or spaces? Does anyone else
+            hate it when.&lt;/li&gt; &lt;li&gt;🚫 Support questions. How do I write a web crawler?
+            How do I get into programming? Where&amp;#39;s my missing semicolon? Please do this
+            obvious homework problem for me. Personally I feel very strongly about not allowing
+            these because they&amp;#39;d quickly drown out all of the actual content I come to see,
+            and there are already much more effective places to get them answered anyway. In real
+            life the quality of the ones that we see is also universally very low.&lt;/li&gt;
+            &lt;li&gt;🚫 Surveys and 🚫 Job postings and anything else that is looking to extract
+            value from a place a lot of programmers hang out without contributing anything
+            itself.&lt;/li&gt; &lt;li&gt;🚫 Meta posts. DAE think &lt;a
+            href=&quot;/r/programming&quot;&gt;r/programming&lt;/a&gt; sucks? Why did you remove my
+            post? Why did you ban this user that is totes not me I swear I&amp;#39;m just asking
+            questions. Except this meta post. This one is okay because I&amp;#39;m a tyrant that the
+            rules don&amp;#39;t apply to (I assume you are saying about me to yourself right
+            now).&lt;/li&gt; &lt;li&gt;🚫 Images, memes, anything low-effort or low-content.
+            Thankfully we very rarely see any of this so there&amp;#39;s not much to remove but like
+            support questions once you have a few of these they tend to totally take over because
+            it&amp;#39;s easier to make a meme than to write a paper and also easier to vote on a
+            meme than to read a paper.&lt;/li&gt; &lt;li&gt;⚠️ Posts that we&amp;#39;d normally
+            allow but that are obviously, unquestioningly super low quality like blogspam
+            copy-pasted onto a site with a bazillion ads. It has to be pretty bad before we remove
+            it and even then sometimes these are the first post to get traction about a news event
+            so we leave them up if they&amp;#39;re the best discussion going on about the news
+            event. There&amp;#39;s a lot of grey area here with CVE announcements in particular:
+            there are a lot of spammy security &amp;quot;blogs&amp;quot; that syndicate stories like
+            this.&lt;/li&gt; &lt;li&gt;⚠️ Posts that are duplicates of other posts or the same news
+            event. We leave up either the first one or the healthiest discussion.&lt;/li&gt;
+            &lt;li&gt;⚠️ Posts where the title editorialises too heavily or especially is a lie or
+            conspiracy theory.&lt;/li&gt; &lt;li&gt;Comments are only very loosely moderated and
+            it&amp;#39;s mostly 🚫 Bots of any kind (Beep boop you misspelled misspelled!) and 🚫
+            Incivility (You idiot, everybody knows that my favourite toy is better than your
+            favourite toy.) However the number of obvious GPT comment bots is rising and will
+            quickly become untenable for the number of active moderators we have.&lt;/li&gt;
+            &lt;/ul&gt; &lt;p&gt;There are some topics such as Code of Conduct arguments within
+            projects that I don&amp;#39;t know where to place where we&amp;#39;ve been doing a
+            civility check on the comments thread and using that to make the decision. Similarly
+            some straddle the line (a link to a StackOverflow post asking for help and the reddit OP
+            is the StackOverflow OP, but there&amp;#39;s a lot of technical content and the reddit
+            discussion is healthy). And even most 🚫s above are left up if there&amp;#39;s a healthy
+            discussion going already by the time we see it.&lt;/p&gt; &lt;h1&gt;So what
+            now?&lt;/h1&gt; &lt;p&gt;We need to decide &lt;strong&gt;what &lt;a
+            href=&quot;/r/programming&quot;&gt;r/programming&lt;/a&gt; should be
+            about&lt;/strong&gt; and we need to write those rules down so that mods can consistently
+            apply them. The rules as written are pretty vague and the way we&amp;#39;re moderating
+            in practise is only loosely connected to them. We&amp;#39;re looking for feedback on
+            what kind of place &lt;a href=&quot;/r/programming&quot;&gt;r/programming&lt;/a&gt;
+            should be so tell us below.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;We need additional
+            mods&lt;/strong&gt;. If you&amp;#39;re interested in helping moderate
+            &lt;strong&gt;please post below, saying why you&amp;#39;d be a good mod and what
+            you&amp;#39;d would change about the space if you were&lt;/strong&gt;. You don&amp;#39;t
+            need to be a moderator elsewhere but please do mention it if you are and what we could
+            learn on &lt;a href=&quot;/r/programming&quot;&gt;r/programming&lt;/a&gt; that you
+            already know. Currently I think I&amp;#39;m the only one going down the new page every
+            morning and removing the rule-breaking posts. (Today these are mostly &amp;quot;how do I
+            program computer&amp;quot; or &amp;quot;can somebody help me fix my printer&amp;quot;,
+            and obvious spam.) This results in a lot of threads complaining about the moderation
+            quality and, well, it&amp;#39;s not wrong. I&amp;#39;m not rigorously watching the mod
+            queue and I&amp;#39;m not trawling comments threads looking for bad actors unless
+            I&amp;#39;m in that thread anyway and I don&amp;#39;t use reddit every single day. So if
+            we want it to be better we&amp;#39;ll need more human power.&lt;/p&gt; &lt;h1&gt;FAQ:
+            Why do we need moderation at all? Can&amp;#39;t the votes just do it?&lt;/h1&gt;
+            &lt;p&gt;We know there is demand for unmoderated spaces in the world, but &lt;a
+            href=&quot;/r/programming&quot;&gt;r/programming&lt;/a&gt; isn&amp;#39;t that space.
+            This is our theory on why keeping the subreddit on topic is important:&lt;/p&gt;
+            &lt;ul&gt; &lt;li&gt;Forums have the interesting property that &lt;strong&gt;whatever is
+            on the front page today is what will be on the front page tomorrow&lt;/strong&gt;. When
+            a user comes to the site and sees a set of content, they believe that that&amp;#39;s
+            what this website is about. If they like it they&amp;#39;ll stay and contribute that
+            kind of content and if they don&amp;#39;t like it they won&amp;#39;t stay, leaving only
+            the people that liked the content they saw yesterday. So the seed content is important
+            and keeping things on topic is important. If you like &lt;a
+            href=&quot;/r/programming&quot;&gt;r/programming&lt;/a&gt; then you need moderation to
+            keep it the way that you like it (or make it be the place you wish it were) because
+            otherwise entropic drift will make it be a different place. And once you have moderation
+            it&amp;#39;s going to have a subjective component, that&amp;#39;s just the nature of
+            it.&lt;/li&gt; &lt;li&gt;Because of the way reddit works, on a light news day &lt;a
+            href=&quot;/r/programming&quot;&gt;r/programming&lt;/a&gt; doesn&amp;#39;t get enough
+            daily content for articles to meaningfully compete with each other. Towards the end of
+            the day if I post something to &lt;a
+            href=&quot;/r/programming&quot;&gt;r/programming&lt;/a&gt; it will immediately go to the
+            front page of all &lt;a href=&quot;/r/programming&quot;&gt;r/programming&lt;/a&gt;
+            subscribers. So while it&amp;#39;s true that sub-par and rule-breaking posts already do
+            most of their damage before the mods even see them, the whole theory of posts competing
+            via votes alone doesn&amp;#39;t really work in a lower-volume subreddit.&lt;/li&gt;
+            &lt;li&gt;Because of the mechanics of moderation it&amp;#39;s not really possible to
+            allow the subreddit to be say 5% support questions. Even if we wanted to allow it to be
+            a small amount of the conten, the individuals whose content was removed would experience
+            and perceive this as a punitive action against them. That means that any category we
+            allow could theoretically completely take over &lt;a
+            href=&quot;/r/programming&quot;&gt;r/programming&lt;/a&gt; (like the career posts from
+            last week) so we should only allow types of content that we&amp;#39;d be okay with
+            taking it over.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Personally my dream is for &lt;a
+            href=&quot;/r/programming&quot;&gt;r/programming&lt;/a&gt; to be the place with the
+            highest quality programming content, where I can go to read something interesting and
+            learn something new every day. That dream is at odds with allowing every piece of
+            blogspam and &amp;quot;10 ways to convince your boss to give you a raise, #2 will get
+            you fired!&amp;quot;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by
+            &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/ketralnis&quot;&gt; /u/ketralnis
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/173viwj/meta_the_future_of_rprogramming/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/173viwj/meta_the_future_of_rprogramming/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_173viwj</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/173viwj/meta_the_future_of_rprogramming/" />
+        <updated>2023-10-09T16:03:36+00:00</updated>
+        <published>2023-10-09T16:03:36+00:00</published>
+        <title>[META] The future of r/programming</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/Alternative-Rich-578</name>
+            <uri>https://www.reddit.com/user/Alternative-Rich-578</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/Alternative-Rich-578&quot;&gt;
+            /u/Alternative-Rich-578 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://tgr.dev/take-nextjs-to-the-next-level-create-a-github-stars-monitor&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wl4ls/how_to_create_a_github_stars_monitor_with_nextjs/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wl4ls</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17wl4ls/how_to_create_a_github_stars_monitor_with_nextjs/" />
+        <updated>2023-11-16T11:56:43+00:00</updated>
+        <published>2023-11-16T11:56:43+00:00</published>
+        <title>How to create a GitHub Stars monitor with NextJS</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/fagnerbrack</name>
+            <uri>https://www.reddit.com/user/fagnerbrack</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/fagnerbrack&quot;&gt; /u/fagnerbrack &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://socket.dev/blog/social-engineering-campaign-npm-malware&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wfpzu/social_engineering_campaign_targeting_tech/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wfpzu</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17wfpzu/social_engineering_campaign_targeting_tech/" />
+        <updated>2023-11-16T06:03:27+00:00</updated>
+        <published>2023-11-16T06:03:27+00:00</published>
+        <title>Social engineering campaign targeting tech employees spreading through npm malware</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/Pioneer_X</name>
+            <uri>https://www.reddit.com/user/Pioneer_X</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/Pioneer_X&quot;&gt; /u/Pioneer_X &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://devblogs.microsoft.com/oldnewthing/20231115-00/?p=109020&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wg5tj/why_does_calling_a_coroutine_allocate_a_lot_of/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wg5tj</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17wg5tj/why_does_calling_a_coroutine_allocate_a_lot_of/" />
+        <updated>2023-11-16T06:29:45+00:00</updated>
+        <published>2023-11-16T06:29:45+00:00</published>
+        <title>Why does calling a coroutine allocate a lot of stack space even though the coroutine
+            frame is on the heap? - The Old New Thing</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/theangryepicbanana</name>
+            <uri>https://www.reddit.com/user/theangryepicbanana</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/theangryepicbanana&quot;&gt;
+            /u/theangryepicbanana &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://twitter.com/angryepicbanana/status/1725022939337175514&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wfbu2/replit_has_quietly_announced_that_teams_for/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wfbu2</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17wfbu2/replit_has_quietly_announced_that_teams_for/" />
+        <updated>2023-11-16T05:41:03+00:00</updated>
+        <published>2023-11-16T05:41:03+00:00</published>
+        <title>Replit has quietly announced that Teams for Education is no longer free</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/chillysurfer</name>
+            <uri>https://www.reddit.com/user/chillysurfer</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/chillysurfer&quot;&gt; /u/chillysurfer &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://trstringer.com/oss-compensation-broken/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wmzkb/the_lack_of_compensation_in_open_source_software/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wmzkb</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17wmzkb/the_lack_of_compensation_in_open_source_software/" />
+        <updated>2023-11-16T13:34:00+00:00</updated>
+        <published>2023-11-16T13:34:00+00:00</published>
+        <title>The Lack of Compensation in Open Source Software is Unsustainable</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/ian4321</name>
+            <uri>https://www.reddit.com/user/ian4321</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/ian4321&quot;&gt; /u/ian4321 &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.tonic.ai/blog/rag-evaluation-series-validating-openai-assistants-rag-performance&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17w4qkr/multiple_documents_reveal_significant_limitations/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17w4qkr</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17w4qkr/multiple_documents_reveal_significant_limitations/" />
+        <updated>2023-11-15T21:46:02+00:00</updated>
+        <published>2023-11-15T21:46:02+00:00</published>
+        <title>Multiple documents reveal significant limitations of OpenAI's Assistants API for RAG</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/lowlet3443</name>
+            <uri>https://www.reddit.com/user/lowlet3443</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/lowlet3443&quot;&gt; /u/lowlet3443 &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://microsoftedge.github.io/edgevr/posts/Escaping-the-sandbox-A-bug-that-speaks-for-itself/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wjst1/escaping_the_sandbox_a_bug_that_speaks_for_itself/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wjst1</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17wjst1/escaping_the_sandbox_a_bug_that_speaks_for_itself/" />
+        <updated>2023-11-16T10:35:44+00:00</updated>
+        <published>2023-11-16T10:35:44+00:00</published>
+        <title>Escaping the sandbox: A bug that speaks for itself</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/Xadartt</name>
+            <uri>https://www.reddit.com/user/Xadartt</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/Xadartt&quot;&gt; /u/Xadartt &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://steelph0enix.github.io/posts/choosing-first-language/?ref=dailydev&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wlah3/when_should_you_choose_c_as_your_starting_language/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wlah3</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17wlah3/when_should_you_choose_c_as_your_starting_language/" />
+        <updated>2023-11-16T12:06:02+00:00</updated>
+        <published>2023-11-16T12:06:02+00:00</published>
+        <title>When should you choose C++ as your starting language?</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/jgbbrd</name>
+            <uri>https://www.reddit.com/user/jgbbrd</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/jgbbrd&quot;&gt; /u/jgbbrd &lt;/a&gt; &lt;br/&gt;
+            &lt;span&gt;&lt;a
+            href=&quot;https://ask.cord.com/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32;
+            &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wmffq/hack_project_chatbot_that_knows_the_current_state/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wmffq</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17wmffq/hack_project_chatbot_that_knows_the_current_state/" />
+        <updated>2023-11-16T13:07:01+00:00</updated>
+        <published>2023-11-16T13:07:01+00:00</published>
+        <title>Hack project: Chatbot that knows the current state of a bunch technologies</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/Pump1IT</name>
+            <uri>https://www.reddit.com/user/Pump1IT</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/Pump1IT&quot;&gt; /u/Pump1IT &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://blog.nelhage.com/2010/02/a-very-subtle-bug/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wlqsh/a_very_subtle_bug/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wlqsh</id>
+        <link href="https://www.reddit.com/r/programming/comments/17wlqsh/a_very_subtle_bug/" />
+        <updated>2023-11-16T12:31:13+00:00</updated>
+        <published>2023-11-16T12:31:13+00:00</published>
+        <title>A Very Subtle Bug</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/sdxyz42</name>
+            <uri>https://www.reddit.com/user/sdxyz42</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/sdxyz42&quot;&gt; /u/sdxyz42 &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://newsletter.systemdesign.one/p/how-does-netflix-work&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wmczo/how_does_netflix_work/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wmczo</id>
+        <link href="https://www.reddit.com/r/programming/comments/17wmczo/how_does_netflix_work/" />
+        <updated>2023-11-16T13:03:29+00:00</updated>
+        <published>2023-11-16T13:03:29+00:00</published>
+        <title>How Does Netflix Work?</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/bajcmartinez</name>
+            <uri>https://www.reddit.com/user/bajcmartinez</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/bajcmartinez&quot;&gt; /u/bajcmartinez &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://thecodeenigma.com/post/advice-to-myself-when-starting-as-a-software-developer/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17w42h8/advice_to_myself_when_starting_as_a_software/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17w42h8</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17w42h8/advice_to_myself_when_starting_as_a_software/" />
+        <updated>2023-11-15T21:17:54+00:00</updated>
+        <published>2023-11-15T21:17:54+00:00</published>
+        <title>Advice to Myself When Starting as a Software Developer</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/geek_noob</name>
+            <uri>https://www.reddit.com/user/geek_noob</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/geek_noob&quot;&gt; /u/geek_noob &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.cyberkendra.com/2023/11/reptar-new-cpu-vulnerability-discovered.html&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17voujk/reptar_new_cpu_vulnerability_discovered_by_google/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17voujk</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17voujk/reptar_new_cpu_vulnerability_discovered_by_google/" />
+        <updated>2023-11-15T08:02:46+00:00</updated>
+        <published>2023-11-15T08:02:46+00:00</published>
+        <title>'Reptar' - New CPU Vulnerability Discovered by Google - Cyber Kendra</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/feross</name>
+            <uri>https://www.reddit.com/user/feross</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/feross&quot;&gt; /u/feross &lt;/a&gt; &lt;br/&gt;
+            &lt;span&gt;&lt;a
+            href=&quot;https://webkit.org/blog/14769/release-notes-for-safari-technology-preview-183/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wjien/release_notes_for_safari_technology_preview_183/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wjien</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17wjien/release_notes_for_safari_technology_preview_183/" />
+        <updated>2023-11-16T10:16:40+00:00</updated>
+        <published>2023-11-16T10:16:40+00:00</published>
+        <title>Release Notes for Safari Technology Preview 183</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/TheTermProgrammer</name>
+            <uri>https://www.reddit.com/user/TheTermProgrammer</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/TheTermProgrammer&quot;&gt; /u/TheTermProgrammer
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://github.com/mmmmosca/Fuse-cypher&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wm8zd/fuse_cypher/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wm8zd</id>
+        <link href="https://www.reddit.com/r/programming/comments/17wm8zd/fuse_cypher/" />
+        <updated>2023-11-16T12:58:06+00:00</updated>
+        <published>2023-11-16T12:58:06+00:00</published>
+        <title>Fuse cypher</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/TheTermProgrammer</name>
+            <uri>https://www.reddit.com/user/TheTermProgrammer</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/TheTermProgrammer&quot;&gt; /u/TheTermProgrammer
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://github.com/mmmmosca/Fuse-cypher&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wm8xi/fuse_cypher/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wm8xi</id>
+        <link href="https://www.reddit.com/r/programming/comments/17wm8xi/fuse_cypher/" />
+        <updated>2023-11-16T12:58:01+00:00</updated>
+        <published>2023-11-16T12:58:01+00:00</published>
+        <title>Fuse cypher</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/adriangrigore</name>
+            <uri>https://www.reddit.com/user/adriangrigore</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/adriangrigore&quot;&gt; /u/adriangrigore
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://odes.mkws.sh/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32;
+            &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wl7e8/mkws_odes/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wl7e8</id>
+        <link href="https://www.reddit.com/r/programming/comments/17wl7e8/mkws_odes/" />
+        <updated>2023-11-16T12:01:11+00:00</updated>
+        <published>2023-11-16T12:01:11+00:00</published>
+        <title>mkws odes</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/fagnerbrack</name>
+            <uri>https://www.reddit.com/user/fagnerbrack</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/fagnerbrack&quot;&gt; /u/fagnerbrack &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://vercel.com/blog/understanding-react-server-components&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wka1z/understanding_react_server_components/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wka1z</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17wka1z/understanding_react_server_components/" />
+        <updated>2023-11-16T11:06:06+00:00</updated>
+        <published>2023-11-16T11:06:06+00:00</published>
+        <title>Understanding React Server Components</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/DingoFreedomParty</name>
+            <uri>https://www.reddit.com/user/DingoFreedomParty</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/DingoFreedomParty&quot;&gt; /u/DingoFreedomParty
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.epochconverter.com/countdown?q=1700000000&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17v3p8k/unix_time_reaches_1700000000_today/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17v3p8k</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17v3p8k/unix_time_reaches_1700000000_today/" />
+        <updated>2023-11-14T14:43:36+00:00</updated>
+        <published>2023-11-14T14:43:36+00:00</published>
+        <title>Unix time reaches 1700000000 today!</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/sniperdufus</name>
+            <uri>https://www.reddit.com/user/sniperdufus</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Looking
+            for API that can let me know how much alcohol is in a drink. &lt;/p&gt; &lt;p&gt;Thnk
+            you&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/sniperdufus&quot;&gt; /u/sniperdufus &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;http://www.bws.com&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32;
+            &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wmr0t/finding_alcohol_api/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wmr0t</id>
+        <link href="https://www.reddit.com/r/programming/comments/17wmr0t/finding_alcohol_api/" />
+        <updated>2023-11-16T13:22:50+00:00</updated>
+        <published>2023-11-16T13:22:50+00:00</published>
+        <title>Finding Alcohol API</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/nicolaballotta</name>
+            <uri>https://www.reddit.com/user/nicolaballotta</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/nicolaballotta&quot;&gt; /u/nicolaballotta
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://hybridhacker.email/p/how-to-manage-remote-teams-part-2&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wi92z/how_to_manage_remote_teams_part_2/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wi92z</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17wi92z/how_to_manage_remote_teams_part_2/" />
+        <updated>2023-11-16T08:48:30+00:00</updated>
+        <published>2023-11-16T08:48:30+00:00</published>
+        <title>How to Manage Remote Teams - Part 2</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/Pump1IT</name>
+            <uri>https://www.reddit.com/user/Pump1IT</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/Pump1IT&quot;&gt; /u/Pump1IT &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://blog.nelhage.com/2010/02/a-very-subtle-bug/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17wljvw/a_very_subtle_bug/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17wljvw</id>
+        <link href="https://www.reddit.com/r/programming/comments/17wljvw/a_very_subtle_bug/" />
+        <updated>2023-11-16T12:20:52+00:00</updated>
+        <published>2023-11-16T12:20:52+00:00</published>
+        <title>A Very Subtle Bug</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/blastecksfour</name>
+            <uri>https://www.reddit.com/user/blastecksfour</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/blastecksfour&quot;&gt; /u/blastecksfour
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://shuttle.rs/cch&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32;
+            &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17vwkhw/shuttles_christmas_code_hunt_16_days_of_rust/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17vwkhw</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17vwkhw/shuttles_christmas_code_hunt_16_days_of_rust/" />
+        <updated>2023-11-15T15:51:02+00:00</updated>
+        <published>2023-11-15T15:51:02+00:00</published>
+        <title>Shuttle's Christmas Code Hunt - 16 days of Rust challenges</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/fagnerbrack</name>
+            <uri>https://www.reddit.com/user/fagnerbrack</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/fagnerbrack&quot;&gt; /u/fagnerbrack &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.nullpt.rs/evading-anti-debugging-techniques&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17w2drl/evading_javascript_antidebugging_techniques/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17w2drl</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17w2drl/evading_javascript_antidebugging_techniques/" />
+        <updated>2023-11-15T20:06:23+00:00</updated>
+        <published>2023-11-15T20:06:23+00:00</published>
+        <title>Evading JavaScript Anti-Debugging Techniques</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/igor_hu</name>
+            <uri>https://www.reddit.com/user/igor_hu</uri>
+        </author>
+        <category term="programming" label="r/programming" />
+        <content type="html">
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/igor_hu&quot;&gt; /u/igor_hu &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://resourcefulswe.substack.com/p/what-is-gitops&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/programming/comments/17whcsr/a_practical_guide_to_start_your_journey_with/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_17whcsr</id>
+        <link
+            href="https://www.reddit.com/r/programming/comments/17whcsr/a_practical_guide_to_start_your_journey_with/" />
+        <updated>2023-11-16T07:46:04+00:00</updated>
+        <published>2023-11-16T07:46:04+00:00</published>
+        <title>A practical guide to start your journey with GitOps in Kubernetes deployments</title>
+    </entry>
+</feed>

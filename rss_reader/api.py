@@ -14,7 +14,7 @@ from typing import List
 
 from fastapi import Depends, FastAPI, HTTPException, Query
 
-from rss_reader import db
+from rss_reader import db, feedsvc
 
 
 app = FastAPI()
@@ -86,6 +86,7 @@ def delete_user(*, session: db.Session = Depends(get_session), username: str) ->
 def create_feed(*, session: db.Session = Depends(get_session), feed: db.FeedBase) -> db.Feed:
     """Create a new feed"""
     new_feed = db.Feed.from_orm(feed)
+    feedsvc.replenish(new_feed)
     try:
         return db.add_feed(session, new_feed)
     except ValueError as err:
